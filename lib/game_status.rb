@@ -24,5 +24,5 @@ winner = []
     end
     return false
   end
-  winner
+  return winner
 end
