@@ -26,7 +26,7 @@ winner = []
       board[win_index] = "O"
       winner = win_array
     else
-      false 
+      false
     end
   end
   return winner
