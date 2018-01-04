@@ -44,7 +44,8 @@ end
 
 def winner(board)
   if won?(board)
-    return board[win_array[0]]
+    win_array = won?(board)
+    board[win_array[0]]
   else
     return nil
   end
