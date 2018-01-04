@@ -16,6 +16,13 @@ WIN_COMBINATIONS = [
   [2,4,6],
 ]
 
-def won
-
+def won(board)
+  WIN_COMBINATIONS.each do |win_array|
+    win_array.each do |win_index|
+      if board[win_index] = "X" 
+        return win_array
+      else
+        false
+    end  
+  end
 end
