@@ -21,8 +21,7 @@ def won?(board)
     if board[win_array[0]] == "X" && board[win_array[1]] == "X" && board[win_array[2]] == "X" ||
       board[win_array[0]] == "O" && board[win_array[1]] == "O" && board[win_array[2]] == "O"
       return win_array
-    else
-      return false
     end
   end
+  false
 end
