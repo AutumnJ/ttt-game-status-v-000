@@ -25,7 +25,7 @@ winner = []
     else win_array.all? do |win_index|
       board[win_index] = "O"
       winner = win_array
-    end 
+    end
     end
     return false
   end
