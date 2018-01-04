@@ -18,8 +18,8 @@ WIN_COMBINATIONS = [
 
 def won(board)
   WIN_COMBINATIONS.each do |win_array|
-    win_array.each do |win_index|
-      if board[win_index] = "X"
+    win_array.all? do |win_index|
+      board[win_index] = "X" 
         return win_array
       else
         false
