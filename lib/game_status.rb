@@ -22,7 +22,7 @@ winner = []
     if win_array.all? do |win_index|
       board[win_index] = "X"
       winner = win_array
-    elsif win_array.all? do |win_index|
+    else win_array.all? do |win_index|
       board[win_index] = "O"
       winner = win_array
     end 
