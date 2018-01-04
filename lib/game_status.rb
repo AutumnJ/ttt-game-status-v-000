@@ -21,9 +21,6 @@ def won(board)
     win_array.all? do |win_index|
       board[win_index] = "X"
         return win_array
-      else
-        false
-      end
     end
   end
 end
