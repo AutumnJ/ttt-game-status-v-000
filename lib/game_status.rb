@@ -19,8 +19,13 @@ WIN_COMBINATIONS = [
 def won?(board)
 winner = []
   WIN_COMBINATIONS.each do |win_array|
-    if win_array.all? { |win_index| board[win_index] = "X" } || win_array.all? { |win_index| board[win_index] = "O"}
-        winner = win_array
+    if win_array.all? do |win_index|
+      board[win_index] = "X"
+      winner = win_array
+    elsif win_array.all? do |win_index|
+      board[win_index] = "O"
+      winner = win_array
+    end 
     end
     return false
   end
