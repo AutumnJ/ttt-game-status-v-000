@@ -21,9 +21,8 @@ winner = []
   WIN_COMBINATIONS.each do |win_array|
     if win_array.all? { |win_index| board[win_index] = "X" } || win_array.all? { |win_index| board[win_index] = "O"}
         winner = win_array
-    else
-      return false
     end
+    return false
   end
   winner
 end
