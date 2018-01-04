@@ -16,11 +16,17 @@ WIN_COMBINATIONS = [
   [2,4,6],
 ]
 
-def won(board)
+def won?(board)
+winner = []
   WIN_COMBINATIONS.each do |win_array|
-    win_array.all? do |win_index|
-      board[win_index] = "X"
-        return win_array
+    if win_array.all? do |win_index|
+      board[win_index] = "X" 
+        winner = win_array
+    elsif win_array.all? do |win_index|
+      winner = board[win_index] = "O" 
+    else
+      return false
     end
   end
+  winner
 end
