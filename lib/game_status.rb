@@ -38,5 +38,6 @@ def draw?(board)
 end
 
 def over?(board)
+  # if any of the below are true, will return true. Else returns false by default
   won?(board) || draw?(board) || full?(board)
 end
