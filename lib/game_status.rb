@@ -43,5 +43,8 @@ def over?(board)
 end
 
 def winner(board)
-  board[win_array[0]]
+  if won?(board)
+    return board[win_array[0]]
+  else 
+    return nil
 end
