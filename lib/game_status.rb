@@ -27,6 +27,7 @@ winner = []
     else
       return false
     end
+    end
   end
   winner
 end
