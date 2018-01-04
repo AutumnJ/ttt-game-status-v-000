@@ -47,6 +47,6 @@ def winner(board)
     win_array = won?(board)
     board[win_array[0]]
   else
-    return nil
+    nil
   end
 end
