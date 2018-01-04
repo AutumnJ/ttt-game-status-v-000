@@ -23,6 +23,7 @@ def won(board)
         return win_array
       else
         false
+      end
     end
   end
 end
